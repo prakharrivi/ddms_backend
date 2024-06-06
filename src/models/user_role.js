@@ -1,0 +1,38 @@
+var mongoose = require('mongoose')
+
+var user_roleSchema = mongoose.Schema({
+  user_role: String,
+  created_at: { type: Date, default: Date.now },
+  Download: String,
+  edit: String,
+  Update_new_version: String,
+  Unlock: String,
+  Download_pdf: String,
+  Send_document_as_attachment: String,
+  Security: String,
+  History: String,
+  Preview: String,
+  Audit_log: String,
+  Add_category: String,
+  Add_Keyword: String,
+  Start_Workflow: String,
+  Restore_Version: String,
+  Export_to_word: String,
+  Update: String,
+  Cancel_Edit: String,
+  Lock: String,
+  Create_link: String,
+  Send_document_as_link: String,
+  Properties: String,
+  Notes: String,
+  Version_downloads: String,
+  Print_Visible: String,
+  Workflow_log: String,
+  Remove_category: String,
+  Remove_Keyword: String,
+  Create_from_template: String,
+  Sign_document: String,
+  Export_to_excel: String,
+})
+
+exports = mongoose.model('user_role', user_roleSchema)
